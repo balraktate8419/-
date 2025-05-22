@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>स्क्रोलिंग अभंग</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: purple;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .header-text {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .letter-box {
+      width: 90%;
+      max-width: 600px;
+      height: 80vh;
+      background-color: white;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 20px;
+
+      border: 20px solid transparent;
+      border-image: url('https://i.imgur.com/5JY7qxM.png') 30 round;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .scrolling-text {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      animation: scroll-up 25s linear infinite;
+      color: black;
+    }
+
+    @keyframes scroll-up {
+      0% {
+        transform: translateY(100%);
+      }
+      100% {
+        transform: translateY(-110%);
+      }
+    }
+
+    pre {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      text-align: center;
+    }
+
+    .footer-text {
+      position: absolute;
+      bottom: 5px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-text">श्रीसंत हरिहर महाराज अभंग</div>
+
+  <div class="letter-box">
+    <div class="scrolling-text">
+      <pre>
+॥२॥
+पहाटेच्या प्रहरी म्हणा हरि हरी ।
+तया सुखा सरी नाहीं दुजें ॥१॥
+केशव वामन नारायण विष्णु ।
+कृष्ण संकर्षणु राम राम ॥२॥
+माधवा वामना श्रीधरा गोविंदा ।
+अच्युत मुकुंदा पुरुषोत्तमा ॥३॥
+नरहरी भार्गवा गोपाळा वासुदेवा ।
+हृषीकेशा पावा स्मरणमात्रं ॥४॥
+तुका म्हणे एका नामीं भाव ।
+राहे होय साह्य पांडुरंग ॥५॥ ॥३॥
+
+अयोध्या मथुरा काशी अवंतिका ।
+कांची हे द्वारका माया सत्य ॥१॥
+मोक्ष पुऱ्या ऐशा नित्य वाचे स्मरे ।
+प्राणी तो उद्धरे स्मरणमात्रं ॥२॥
+नित्य नित्य मनीं हरि आठवावा ।
+तेणेंचि तरावा भवसिंधु ॥३॥
+तुका म्हणे ऐसा नामाचा महिमा ।
+राहील जो नेमा तोचि धन्य ॥४॥
+      </pre>
+    </div>
+  </div>
+
+  <div class="footer-text">🚩 ll ओम नमो भगवते वासुदेवाय ll 🚩</div>
+</body>
+</html>
